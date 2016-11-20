@@ -1,0 +1,26 @@
+
+
+.head {
+
+  background: url("http://s59.podbean.com/pb/afe642a25f0e25ddf483e0a729aae5be/58263e2c/data1/blogs60/763604/uploads/Podcast6.jpg") center;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+
+
+
+
+}
+.slogan{
+  color: white;
+  z-index: 4;
+  top:50%;
+}
+.overlay{
+  background-color: rgba(0, 0, 0, 0.2);
+  background-size: 100px 100px;
+  width:100%;
+  height:500px;
+  position: absolute;
+  z-index: 2;
+}

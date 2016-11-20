@@ -1,5 +1,6 @@
+
 .navbar-brand {
-  background: url(https://www.engr.psu.edu/ieee/Images/Friends/Professional%20IEEE.png) center / contain no-repeat;
+  background: url(images/ieee-logo.png) center / contain no-repeat;
   transform: translateX(-50%);
   left: 50%;
   position: absolute;

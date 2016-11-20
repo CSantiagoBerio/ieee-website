@@ -11,12 +11,15 @@ import { SocietiesComponent } from './societies/societies.component';
 import { HallOfFameComponent } from './hall/hall.component';
 import { SponsorsComponent } from './sponsors/sponsors.component';
 import { ContactComponent } from './contact/contact.component';
-
+import { EventsBannerComponent } from './home/events-banner/events-banner.component';
+import { KSSwiperModule } from 'angular2-swiper';
+import { EventService } from './shared/events/event.service';
 import { AppComponent }  from './app.component';
 
 @NgModule({
   imports: [
     BrowserModule,
+    KSSwiperModule,
     app_routing
   ],
   declarations: [
@@ -30,7 +33,11 @@ import { AppComponent }  from './app.component';
     SponsorsComponent,
     ContactComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    EventsBannerComponent
+  ],
+  providers: [
+    EventService
   ],
   bootstrap: [ AppComponent ]
 })

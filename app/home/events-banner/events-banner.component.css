@@ -1,0 +1,95 @@
+.banner-overlay{
+  position: absolute;
+  left: 63%;
+  width: 37%;
+  height: auto;
+  z-index: 5;
+  background-color: rgba(1, 114, 169, 0.9);
+  color:white;
+  border: 1px transparent;
+  border-radius: 10px;
+}
+.banner-overlay > h1{
+  padding-top: 10px;
+  font-size: 22pt;
+	font-weight: 700;
+	margin: 0px;
+}
+.event-container{
+  position: relative;
+  background-color: rgba(255, 255, 255, 1);
+  color:black;
+  width: 100%;
+  height:150px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 0px;
+  margin-left: 0px;
+  display: block;
+
+
+
+}
+.event-container > img{
+  position: relative;
+  display: inline-block;
+  width: 150px;
+	height: inherit;
+	padding: 0px;
+	margin: 0px;
+  float: left;
+  right: 4%;
+
+
+}
+.event-container > .info{
+  /*position: relative;*/
+	height: inherit;
+	text-align: left;
+	padding-right: 5px;
+  overflow: hidden;
+
+
+
+}
+.event-container > .info > .title{
+  font-size: 12pt;
+  font-weight: 700;
+  margin: 0px;
+}
+
+.event-container > .info > .society {
+	font-size: 11pt;
+	font-weight: 600;
+  color: rgba(100, 100, 100, 1);
+	margin: 0px;
+}
+
+.event-container > .info > .desc {
+	font-size: 10pt;
+	font-weight: 200;
+	margin: 0px;
+}
+
+.event-container > .info > .time {
+	font-size: 9pt;
+	font-weight: 600;
+	margin: 0px;
+}
+
+.event-container > .info > .title,
+.event-container > .info > .desc,
+.event-container > .info > .society,
+.event-container > .info > .time{
+			position: relative;
+      padding-top: 10px;
+		}
+.event-container > .info > .society{
+			position: relative;
+      padding-top: 5px;
+}
+.event-container > .info > .time{
+			position: absolute;
+      top:80%;
+
+		}
