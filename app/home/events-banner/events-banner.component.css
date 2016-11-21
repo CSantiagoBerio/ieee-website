@@ -93,3 +93,12 @@
       top:80%;
 
 		}
+
+
+
+.swiper-button-prev,
+.swiper-button-next{
+  position: absolute;
+  top:30%;
+
+}

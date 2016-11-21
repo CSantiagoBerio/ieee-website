@@ -1,5 +1,7 @@
 import { Component, OnInit, ViewChild, AfterViewInit } from '@angular/core';
 import { Event } from '../../shared/events/event';
+import { EventsWrapper } from '../../shared/events/events-wrapper';
+
 import { EventService } from '../../shared/events/event.service';
 import {KSSwiperContainer, KSSwiperSlide} from 'angular2-swiper';
 
@@ -13,7 +15,7 @@ export class EventsBannerComponent implements OnInit {
 
   @ViewChild(KSSwiperContainer) swiperContainer: KSSwiperContainer;
 
-  events: Event[];
+  events: EventsWrapper[];
   example1SwipeOptions: any;
 
   constructor(
@@ -22,12 +24,15 @@ export class EventsBannerComponent implements OnInit {
     this.example1SwipeOptions = {
       slidesPerView: 1,
       loop: false,
-      spaceBetween: 5
+      spaceBetween: 5,
+      autoplay: 2000,
+      effect: 'coverflow',
+      pagination:'swiper-pagination'
     };
   }
 
   getEvents(){
-    this.eventService.getEvents().then(events => this.events = events);
+    this.eventService.orderEventsByDay().then(events => this.events = events);
   }
 
   ngOnInit(): void {
